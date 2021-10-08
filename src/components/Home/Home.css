@@ -1,0 +1,177 @@
+.container{
+    /* background: #f4f4f4; */
+    background: #c4dff6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 1rem;
+
+}
+
+.box {
+    margin: 2rem 0;
+    background: #fff;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.logout {
+    text-align: right;
+    cursor: pointer;
+}
+
+.close {
+    color: #676c70;
+}
+
+
+
+
+
+/*=========================================
+            HEADER CONTAINER 
+===========================================*/
+
+.header {
+    margin-bottom: 1.3rem;
+}
+
+.header p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+}
+
+.today {
+    color: rgb(231, 179, 101);
+}
+
+.header h2 {
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    margin: .3rem 0;
+}
+
+
+
+/*=======================================
+            FORM CONTAINER 
+=======================================*/
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: .7rem;
+}
+
+.form input{
+    width: 100%;
+    padding: .8rem;
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: 'Sen',sans-serif;
+    border: none;
+    outline: none;
+}
+
+.form button {
+    width: 20%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #c4dff6;
+    color: #404142;
+
+}
+
+
+/*=======================================
+            BODY CONTAINER 
+=======================================*/
+.body__container{
+    display: block;
+    overflow: auto;
+    height: 300px;
+}
+
+.body__container::-webkit-scrollbar{
+    width: 6px;
+}
+.body__container::-webkit-scrollbar-thumb{
+    background: rgb(187, 187, 187);
+    border-radius: 10px;
+}
+.body__container::-webkit-scrollbar-track{
+    background: rgb(211, 211, 211);
+    border-radius: 10px;
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0 .7rem .7rem 0;
+    padding: .7rem;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.body p {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.done__btn,
+.cancel__btn {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.done__btn {
+    margin: 0 1rem;
+}
+
+.done__btn .done{
+    color:#0abf53;
+}
+
+.cancel__btn .cancel{
+    color:#e4002b;
+}
+
+
+
+@media(min-width:600px) {
+    .box{
+        width: 400px;
+    }
+}
+
+
+
+
+.noTodos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+.noTodos img {
+    width: 50px;
+}
+.noTodos h2 {
+    font-size: .9rem;
+    font-weight: 600;
+}
